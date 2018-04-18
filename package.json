@@ -1,0 +1,15 @@
+{
+  "name": "react-pokedex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pokedex-api": "NG_POKEDEX_PORT=5200 pokedex-api"
+  },
+  "author": "Jared Perreault (jared_perreault@yahoo.com)",
+  "license": "MIT",
+  "dependencies": {
+    "pokedex-api": "github:pkthunder/pokedex-api"
+  }
+}
