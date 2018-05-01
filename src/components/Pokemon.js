@@ -17,6 +17,8 @@ class Pokemon extends Component {
     componentDidMount() {
         this.api.getPokemon(1)
         .then((result) => {
+            console.log(result);
+
             this.setState({
                 isLoaded: true,
                 pokemon: result
@@ -32,6 +34,10 @@ class Pokemon extends Component {
 
     render() {
         const { error, isLoaded, pokemon } = this.state;
+        const getSpriteUri = function (pokemon) {
+            const baseUri = 'https://img.pokemondb.net/artwork/:name:.jpg';
+            return baseUri.replace(':name:', pokemon.name.toLowerCase());
+        };
 
         if (error) {
             return <div>Error: {error.message}</div>;
@@ -45,6 +51,7 @@ class Pokemon extends Component {
                     <li>{pokemon.id}</li>
                     <li>{pokemon.name}</li>
                     <li>{pokemon.pokeIndex}</li>
+                    <li><img src={getSpriteUri(pokemon)} alt={getSpriteUri(pokemon)}/></li>
                 </ul>
             );
         }
