@@ -1,15 +1,10 @@
-/*.Pokemon {*/
-    /*display: flex;*/
-    /*position: relative;*/
-/*}*/
-
-.Pokemon-inner {
+.Pokemon {
     display: flex;
     width: 60%;
     margin: 0 auto;
 }
 
-.Pokemon-inner .left-panel {
+.Pokemon .left-panel {
     width: 50px;
     margin-right: 10px;
     vertical-align: middle;
@@ -17,7 +12,7 @@
     background-color: red;
 }
 
-.Pokemon-inner .right-panel {
+.Pokemon .right-panel {
     width: 50px;
     margin-left: 10px;
     vertical-align: middle;
@@ -25,7 +20,7 @@
     background-color: red;
 }
 
-.Pokemon-inner .main-panel {
+.Pokemon .main-panel {
     flex: 1;
     display: flex;
 }
@@ -36,11 +31,11 @@
     left: 0; right: 0;
 }
 
-.Pokemon-inner .main-panel .learnset-pane {
+.Pokemon .main-panel .learnset-pane {
     flex: 1;
 }
 
-.Pokemon-inner .main-panel .learnset-pane .learnset-tabs {
+.Pokemon .main-panel .learnset-pane .learnset-tabs {
     padding-left: 5px;
     padding-right: 20px;
 }
@@ -50,16 +45,16 @@
     padding: 15px 10px;
 }
 
-.Pokemon-inner .main-panel .info-pane {
+.Pokemon .main-panel .info-pane {
 
 }
 
-.Pokemon-inner .main-panel .info-pane .stats-pane {
+.Pokemon .main-panel .info-pane .stats-pane {
     padding-left: 25%;
     padding-right: 25%;
 }
 
-.Pokemon-inner .main-panel .info-pane .stats-pane > p {
+.Pokemon .main-panel .info-pane .stats-pane > p {
     margin-bottom: 2px;
 }
 
